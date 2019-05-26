@@ -1,0 +1,11 @@
+categories:
+- exceptions
+conversations:
+- - What is Unauthorised exception?
+  - Please reset your password.
+- - javax.jms.JMSException: start failed: Received fatal alert: certificate_unknown
+  - Make sure that you exported the broker’s certificate (step 2 in How do I use SSL) and imported it on the client into a truststore (step 4). If you did those, did you specify the javax.net.ssl.trustStore system property when you started your client VM?
+- - java.io.InterruptedIOException
+  - -Xmx: If your OS has more available memory, consider increasing the total heap memory available to the broker JVM
+- - The activemq client will throw an java.io.InterruptedIOException
+  - -Xmx: If your OS has more available memory, consider increasing the total heap memory available to the broker JVM
