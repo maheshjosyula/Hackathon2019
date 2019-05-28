@@ -6,8 +6,8 @@ bot=ChatBot('Bot')
 #bot.set_trainer(ListTrainer)
 trainer = ListTrainer(bot)
 
-for files in os.listdir('C:/Mahesh/Work/python/chatterbot-corpus-master/chatterbot_corpus/data/Errors/'):
-		data=open('C:/Mahesh/Work/python/chatterbot-corpus-master/chatterbot_corpus/data/Errors/'+files,'r').readlines()
+for files in os.listdir('Errors/'):
+		data=open('Errors/'+files,'r').readlines()
 		#bot.train(data)
 		trainer.train(data)
 

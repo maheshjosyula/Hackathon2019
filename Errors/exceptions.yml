@@ -1,0 +1,27 @@
+categories:
+- exceptions
+conversations:
+- - What is Unauthorised exception?
+  - Please reset your password.
+- - java.io.InterruptedIOException
+  - If your OS has more available memory, consider increasing the total heap memory available to the broker JVM
+- - The activemq client will throw an java.io.InterruptedIOException
+  - If your OS has more available memory, consider increasing the total heap memory available to the broker JVM
+- - javax.jms.JMSException start failed Received fatal alert certificate_unknown
+  - Make sure that you exported the broker’s certificate (step 2 in How do I use SSL) and imported it on the client into a truststore (step 4). If you did those, did you specify the javax.net.ssl.trustStore system property when you started your client VM?
+- - javax.net.ssl.SSLHandshakeException Received fatal alert certificate_unknown
+  - Make sure that you exported the broker’s certificate (step 2 in How do I use SSL) and imported it on the client into a truststore (step 4). If you did those, did you specify the javax.net.ssl.trustStore system property when you started your client VM?
+- - java.lang.NoSuchMethodError javax.jms.Session.createConsumer(Ljavax/jms/Destination;)Ljavax/jms/MessageConsumer
+  - You probably have old JMS 1.0.2b versions of the JMS API on your classpath. This is because various methods were added in JMS 1.1 to work with destinations in a polymorphic way 
+- - java.lang.AbstractMethodError javax.jms.ConnectionFactory.createConnection()Ljavax/jms/Connection;  
+  - You probably have old JMS 1.0.2b versions of the JMS API on your classpath. This is because various methods were added in JMS 1.1 to work with destinations in a polymorphic way 
+- - java.lang.NoSuchMethodException org.activemq.ra.ActiveMQResourceAdapter.setUseEmbeddedBroker
+  - You are using 3.0 of ActiveMQ. This bug is fixed in 3.1.x so use 3.1-M6 or later.
+- - javax.jms.JMSException - Wire format negociation timeout - peer did not send his wire format.
+  - You’re connecting to the port not used by ActiveMQ TCP transport
+- - javax.jms.JMSException - Wire format negociation timeout - peer did not send his wire format.
+  - You’re using log4j JMS appender and doesn’t filter out ActiveMQ log messages
+- - javax.jms.JMSException - Wire format negociation timeout - peer did not send his wire format.
+  - Your broker is probably under heavy load (or network connection is unreliable), so connection setup cannot be completed in a reasonable time
+- - Journal is already opened by this application
+  - A common cause of this exception is that you are running two brokers on one machine using the same config file pointing to the same directory.
