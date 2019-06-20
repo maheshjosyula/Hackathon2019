@@ -1,0 +1,18 @@
+@@@@@@@@@@@@@@@@@@possible DB errors@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+unable to connect to destination
+unable to open RPC connection to external procedure agent
+ORA-12154 TNS could not resolve service name
+@@@@@@@@@@@@@@@@@@@possible MQ errors@@@@@@@@@@@@@@@@@@@@@@@@@
+Unauthorised exception?
+java.io.InterruptedIOException
+The activemq client will throw an java.io.InterruptedIOException 
+javax.jms.JMSException start failed Received fatal alert certificate_unknown
+javax.net.ssl.SSLHandshakeException Received fatal alert certificate_unknown
+java.lang.NoSuchMethodError javax.jms.Session.createConsumer(Ljavax/jms/Destination;)Ljavax/jms/MessageConsumer
+java.lang.AbstractMethodError javax.jms.ConnectionFactory.createConnection()Ljavax/jms/Connection;  
+  java.lang.NoSuchMethodException org.activemq.ra.ActiveMQResourceAdapter.setUseEmbeddedBroker
+  javax.jms.JMSException - Wire format negociation timeout - peer did not send his wire format.
+ javax.jms.JMSException - Wire format negociation timeout - peer did not send his wire format.
+  javax.jms.JMSException - Wire format negociation timeout - peer did not send his wire format.
+  Journal is already opened by this application
+  

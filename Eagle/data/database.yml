@@ -1,0 +1,9 @@
+categories:
+- database
+conversations:
+- - unable to connect to destination
+  - Ensure that both services (OracleServiceSID service, OracleHOMENAMETNSListener service)are started.
+- - unable to open RPC connection to external procedure agent
+  - tnsnames.ora and listener.ora files have not been correctly configured to use external procedures
+- - ORA-12154 TNS could not resolve service name
+  - Check to see that the service name is mapped to a connect descriptor in the TNSNAMES.ORA file and add or correct it if necessary
